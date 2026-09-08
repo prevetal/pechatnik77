@@ -370,6 +370,12 @@
                 width: 728px;
                 height: auto;
             }
+
+
+            .line
+            {
+                display: none;
+            }
         }
     }
 

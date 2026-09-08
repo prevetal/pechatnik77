@@ -106,6 +106,43 @@
 
                 font-size: var(--font_size_l);
             }
+
+
+            .line
+            {
+                height: 3px;
+
+
+                &.line1
+                {
+                    top: 9%;
+
+                    --w: 200px;
+                }
+
+
+                &.line2
+                {
+                    --w: 160px;
+                }
+
+
+                &.line3
+                {
+                    top: 104%;
+                    left: 10%;
+
+                    --w: 140px;
+                }
+
+
+                &.line4
+                {
+                    left: 46.4%;
+
+                    --w: 280px;
+                }
+            }
         }
     }
 

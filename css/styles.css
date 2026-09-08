@@ -3062,6 +3062,110 @@ aside
             -webkit-mask-repeat: no-repeat;
                     mask-repeat: no-repeat;
         }
+
+
+        .line
+        {
+            position: absolute;
+
+            width: var(--w, 40px);
+            height: 4px;
+
+            pointer-events: none;
+
+
+            &:before
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                display: block;
+
+                width: 0;
+                height: 100%;
+
+                content: '';
+                animation: growShrink 1.5s ease-in-out infinite alternate;
+
+                border-radius: 2px;
+                background: currentColor;
+
+                clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+            }
+
+
+            &.line1
+            {
+                top: 9%;
+                left: 43.838%;
+
+                transform: rotate(32deg);
+
+                --w: 400px;
+            }
+
+
+            &.line2
+            {
+                top: 43.793%;
+                left: 11.497%;
+
+                --w: 250px;
+
+
+                &:before
+                {
+                    right: 0;
+                    left: auto;
+                }
+            }
+
+
+            &.line3
+            {
+                top: 104.482%;
+                left: 12.489%;
+
+                --w: 180px;
+
+
+                &:before
+                {
+                    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+                }
+            }
+
+
+            &.line4
+            {
+                top: 87%;
+                left: 53%;
+
+                transform: rotate(31.6deg);
+
+                --w: 480px;
+
+
+                &:before
+                {
+                    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes growShrink
+{
+    from
+    {
+        width: 40px;
+    }
+    to
+    {
+        width: var(--w);
     }
 }
 
