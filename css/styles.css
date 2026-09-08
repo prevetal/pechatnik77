@@ -1463,7 +1463,7 @@ header
 
     .mob_menu_btn
     {
-        display: flex;
+        display: none;
         align-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -7181,6 +7181,8 @@ aside
         margin-top: 181px;
         padding-inline: var(--block_padding_l);
 
+        pointer-events: none;
+
         grid-column: 1 / 2;
         grid-row: 1 / 2;
 
@@ -7208,6 +7210,8 @@ aside
         width: 580px;
         max-width: 100%;
         padding: var(--block_padding);
+
+        pointer-events: auto;
 
         color: #2a2b2f;
         border-radius: var(--border_radius_l);
@@ -7405,6 +7409,8 @@ aside
 
         border-radius: var(--border_radius_l);
         background: var(--light_color);
+
+        filter: grayscale(1);
     }
 }
 

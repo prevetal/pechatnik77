@@ -65,6 +65,12 @@
         {
             display: none;
         }
+
+
+        .mob_menu_btn
+        {
+            display: flex;
+        }
     }
 
 
