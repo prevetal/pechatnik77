@@ -1,0 +1,969 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 320px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        --swiper-navigation-size: 80px;
+
+
+        .icon
+        {
+            width: 24px;
+            height: 20px;
+        }
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: var(--block_padding_l);
+
+
+        .btn
+        {
+            height: 56px;
+        }
+    }
+
+
+
+    /*--------------
+        More btn
+    --------------*/
+    .more_btn
+    {
+        height: 100px;
+        padding-inline: var(--block_padding_s);
+
+        font-size: var(--font_size_xl);
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        .head
+        {
+            padding: var(--block_padding_s);
+
+
+            .icon
+            {
+                width: 60px;
+            }
+        }
+
+
+        .data
+        {
+            padding-block: 0 var(--block_padding_s);
+            padding-inline: var(--block_padding_s);
+        }
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        .data
+        {
+            gap: var(--inner_gap_l);
+
+            padding-block: var(--inner_gap_xs);
+            padding-inline: var(--inner_gap);
+        }
+
+
+        .logo
+        {
+            .name
+            {
+                display: block;
+
+                width: 140px;
+                max-width: 100%;
+            }
+        }
+
+
+        .catalog_btn
+        {
+            min-width: 188px;
+            height: 60px;
+        }
+
+
+        .menu
+        {
+            gap: var(--inner_gap_l);
+
+            margin-left: 0;
+        }
+
+
+        .contacts
+        {
+            gap: var(--inner_gap_l);
+
+
+            & > *:first-child
+            {
+                display: none;
+            }
+        }
+
+
+        .feedback_btn
+        {
+            min-width: 188px;
+            height: 60px;
+            margin-left: 0;
+        }
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: var(--block_padding_l);
+
+
+        .breadcrumbs
+        {
+            column-gap: var(--block_padding);
+        }
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        .desc
+        {
+            font-size: var(--font_size_l);
+        }
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        blockquote,
+        q
+        {
+            gap: var(--block_padding_xl);
+
+            padding-block: var(--inner_gap_xs);
+        }
+
+
+        table
+        {
+            td
+            {
+                min-width: 280px;
+            }
+        }
+    }
+
+
+
+    /*--------------
+        We print
+    --------------*/
+    .we_print
+    {
+        .list
+        {
+            a
+            {
+                font-size: 110px;
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Directions
+    ----------------*/
+    .directions
+    {
+        .item
+        {
+            min-height: 520px;
+            padding: var(--block_padding);
+
+
+            @media (hover: hover) and (pointer: fine)
+            {
+                &:hover
+                {
+                    .icon
+                    {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        .block_head
+        {
+            width: 520px;
+            margin-bottom: 120px;
+        }
+
+
+        .row
+        {
+            .stats
+            {
+                width: calc(100% - 656px);
+                padding-block: 0 var(--block_padding_xxl);
+
+
+                .link
+                {
+                    gap: var(--block_padding_s);
+
+                    height: 100px;
+                    margin-top: var(--block_padding_xl);
+                    padding-inline: var(--block_padding);
+
+
+                    .icon
+                    {
+                        width: 30px;
+                    }
+                }
+            }
+
+
+            .info
+            {
+                width: 360px;
+
+
+                .swiper-button-next,
+                .swiper-button-prev
+                {
+                    bottom: 192px;
+
+                    --swiper-navigation-sides-offset: -24px;
+                }
+
+
+                .item
+                {
+                    height: 632px;
+                    padding-block: 200px var(--block_padding_l);
+                    padding-inline: var(--block_padding_l);
+                }
+            }
+
+
+            .video
+            {
+                width: 240px;
+                height: 381px;
+            }
+        }
+
+
+        .main_video
+        {
+            top: -480px;
+
+            transform: translateX(88px);
+        }
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        padding-top: 0;
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block
+    {
+        .map
+        {
+            height: 637px;
+        }
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        .swiper
+        {
+            &:not(.swiper-initialized)
+            {
+                .swiper-wrapper
+                {
+                    gap: var(--spaceBetween-1440);
+                }
+
+
+                .swiper-slide
+                {
+                    width: calc(100% / var(--slidesPerView-1440) - var(--spaceBetween-1440));
+                }
+            }
+        }
+
+
+        .review
+        {
+            gap: var(--inner_gap_xl);
+
+            padding-block: var(--inner_gap_xl);
+            padding-inline: var(--inner_gap_xl);
+        }
+    }
+
+
+
+    /*-------------------
+        Footer scroll
+    -------------------*/
+    .footer_scroll
+    {
+        .contacts_data
+        {
+            position: static;
+            top: 0;
+
+            margin-top: 145px;
+        }
+
+
+        .data
+        {
+            gap: var(--inner_gap_l);
+
+            width: 460px;
+            padding: var(--block_padding_s);
+
+
+            .item
+            {
+                .address
+                {
+                    font-size: var(--font_size_title_xxs);
+                }
+
+
+                .val
+                {
+                    font-size: var(--font_size_xl);
+                }
+            }
+
+
+            .messengers
+            {
+                a
+                {
+                    height: 60px;
+                    padding-inline: var(--inner_gap_l);
+                }
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Cases page
+    ----------------*/
+    .cases_page
+    {
+        .filter
+        {
+            a
+            {
+                padding-block: var(--inner_gap);
+                padding-inline: var(--block_padding_s);
+
+                font-size: var(--font_size_xl);
+            }
+        }
+
+
+        .slider
+        {
+            .data
+            {
+                width: 600px;
+                padding-block: var(--block_padding);
+                padding-inline: var(--block_padding);
+
+
+                .title
+                {
+                    font-size: var(--font_size_title_s);
+                }
+
+
+                .count
+                {
+                    .val
+                    {
+                        font-size: 132px;
+                    }
+                }
+            }
+
+
+            .swiper
+            {
+                width: calc(100% - 600px);
+            }
+        }
+
+
+        .list
+        {
+            &:before
+            {
+                left: 498px;
+            }
+        }
+
+
+        .section
+        {
+            .info
+            {
+                width: 468px;
+
+
+                .all_link
+                {
+                    min-width: 280px;
+                    height: 80px;
+                    padding-inline: var(--block_padding_s);
+
+                    font-size: var(--font_size_xl);
+                }
+            }
+
+
+            .data
+            {
+                width: calc(100% - 468px - var(--block_padding_xl));
+            }
+        }
+    }
+
+
+
+    /*---------------
+        No layout
+    ---------------*/
+    .no_layout
+    {
+        .data
+        {
+            gap: var(--block_padding_s);
+
+            padding: var(--block_padding_xl);
+
+
+            .desc
+            {
+                width: 424px;
+            }
+
+
+            .btn
+            {
+                gap: var(--block_padding_s);
+
+                height: 100px;
+                margin-left: var(--inner_gap_l);
+                padding-inline: var(--block_padding);
+
+
+                .icon
+                {
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head
+    {
+        .data
+        {
+            min-height: 750px;
+        }
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products
+    {
+        .grid_row
+        {
+            --gap_x: var(--zero_px);
+        }
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info
+    {
+        .cont
+        {
+            gap: var(--block_padding);
+        }
+
+
+        .col
+        {
+            width: calc(100% - 360px - var(--block_padding));
+
+
+            .row
+            {
+                gap: var(--block_padding);
+            }
+        }
+
+
+        .image
+        {
+            width: 520px;
+        }
+
+
+        .data
+        {
+            width: calc(100% - 520px - var(--block_padding));
+
+
+            .options
+            {
+                margin-top: -16px;
+                padding-top: var(--block_padding_s);
+
+
+                .label
+                {
+                    margin-bottom: var(--inner_gap_xxxs);
+                }
+
+
+                .nice-select
+                {
+                    & > .current,
+                    .multiple-options
+                    {
+                        height: 56px;
+                        padding-inline: var(--inner_gap_s) 48px;
+                    }
+                }
+
+
+                select
+                {
+                    & ~ .arr
+                    {
+                        right: var(--inner_gap_s);
+
+                        width: 20px;
+                    }
+                }
+            }
+
+
+            .features
+            {
+                gap: var(--inner_gap_xs);
+
+                margin-top: 0;
+                padding-top: var(--block_padding_s);
+            }
+
+
+            .desc
+            {
+                gap: var(--inner_gap_xs);
+            }
+        }
+
+
+        .buy
+        {
+            gap: var(--inner_gap_s);
+
+            width: 360px;
+            padding-block: var(--inner_gap_xl);
+            padding-inline: var(--inner_gap_l);
+
+
+            .buy_btn
+            {
+                margin-top: var(--inner_gap);
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data
+    {
+        .documents
+        {
+            .grid_row
+            {
+                --items_per_line: 3;
+            }
+
+
+            .file
+            {
+                padding-block: var(--block_padding_s);
+
+
+                .name
+                {
+                    font-size: var(--font_size_l);
+                }
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        margin-bottom: 480px;
+
+
+        .data
+        {
+            .title
+            {
+                width: 660px;
+            }
+
+
+            .image
+            {
+                &.image1
+                {
+                    bottom: var(--block_padding_xxl);
+                }
+
+
+                &.image3
+                {
+                    width: 600px;
+                }
+            }
+        }
+
+
+        .animate_images
+        {
+            height: 480px;
+
+
+            .image
+            {
+                bottom: -200px;
+
+                width: 400px;
+
+
+                &.image1
+                {
+                    margin-left: -1000px;
+                }
+
+
+                &.image2
+                {
+                    margin-left: -760px;
+                }
+
+
+                &.image3
+                {
+                    width: 480px;
+                    margin-left: -480px;
+                }
+
+
+                &.image4
+                {
+                    margin-left: -160px;
+                }
+
+
+                &.image5
+                {
+                    bottom: -200px;
+
+                    width: 520px;
+                    margin-left: 80px;
+                }
+
+
+                &.image6
+                {
+                    margin-left: 440px;
+                }
+            }
+        }
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        .item
+        {
+            .name
+            {
+                width: calc(100% - 80px);
+
+                font-size: 26px;
+            }
+
+
+            .arr
+            {
+                width: 80px;
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Visual nav
+    ----------------*/
+    .visual_nav
+    {
+        .image
+        {
+            right: 0;
+
+            transform: none;
+        }
+    }
+
+
+
+    /*-----------------------
+        Convenient format
+    -----------------------*/
+    .convenient_format
+    {
+        .block_head
+        {
+            &.row
+            {
+                .title
+                {
+                    width: 640px;
+                }
+
+
+                .image
+                {
+                    width: 592px;
+                    margin-right: 0;
+                }
+            }
+        }
+
+
+        .grid_row
+        {
+            --gap_x: var(--block_padding_xxl);
+        }
+
+
+        .item
+        {
+            gap: var(--inner_gap_xs);
+
+
+            .number
+            {
+                width: 172px;
+
+                font-size: 172px;
+            }
+
+
+            .desc
+            {
+                width: calc(100% - 184px);
+            }
+        }
+    }
+
+
+
+    /*---------------------
+        About page head
+    ---------------------*/
+    .about_page_head
+    {
+        padding-top: var(--block_padding_xl);
+
+
+        .title
+        {
+            font-size: 220px;
+            letter-spacing: -11px;
+        }
+
+
+        .stats
+        {
+            margin-top: var(--outside_gap_s);
+
+
+            .item
+            {
+                .val
+                {
+                    font-size: 96px;
+                }
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases
+    {
+        .slider
+        {
+            .item
+            {
+                width: 340px;
+            }
+        }
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        .cont,
+        .bottom,
+        .links
+        {
+            column-gap: var(--block_padding_xl);
+        }
+
+
+        .requisites_info
+        {
+            flex-direction: column;
+            gap: var(--inner_gap_l);
+        }
+
+
+        .logo
+        {
+            gap: var(--inner_gap_xs);
+
+            margin-right: 0;
+        }
+
+
+        .menu
+        {
+            &.last
+            {
+                margin-right: 0;
+            }
+        }
+    }
+}
